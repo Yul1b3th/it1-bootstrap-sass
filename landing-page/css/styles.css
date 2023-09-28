@@ -9333,7 +9333,7 @@ ul {
   .navbar .btn-navbar {
     background-color: unset;
     color: #fff;
-    border-color: #fa5959; }
+    border-color: #fff; }
   @media (min-width: 768px) {
     .navbar .navbar-nav .border-top,
     .navbar .navbar-nav .border-bottom {
@@ -9343,7 +9343,8 @@ ul {
       color: var(--bs-nav-link-color); }
     .navbar .btn-navbar {
       background-color: #fa5959;
-      color: #fff; }
+      color: #fff;
+      border: 1px solid #fa5959 !important; }
       .navbar .btn-navbar:hover {
         border-color: #fa5959;
         background-color: #fff;

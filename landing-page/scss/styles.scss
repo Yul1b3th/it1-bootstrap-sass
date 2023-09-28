@@ -74,7 +74,7 @@ ul {
   .btn-navbar {
     background-color: unset;
     color: $white;
-    border-color: #fa5959;
+    border-color: $white;
   }
 
   // Medium devices (tablets, 768px and up)
@@ -90,6 +90,7 @@ ul {
     .btn-navbar {
       background-color: $secondary;
       color: $white;
+      border: 1px solid #fa5959 !important;
       &:hover {
         border-color: $secondary;
         background-color: $white;
