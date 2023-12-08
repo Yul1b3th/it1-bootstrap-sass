@@ -39,13 +39,13 @@
     <div class="offcanvas-body d-flex flex-column justify-content-between">
      <ul class="navbar-nav align-items-center ms-md-auto mx-4 text-center">
       <li class=" nav-item mx-4 w-100 border-top border-bottom">
-       <a class="nav-link" href="#">FEATURES</a>
+       <a class="nav-link" href="#section1">FEATURES</a>
       </li>
       <li class="nav-item mx-4 w-100">
-       <a class="nav-link" href="#">PRICING</a>
+       <a class="nav-link" href="#section2">PRICING</a>
       </li>
       <li class="nav-item mx-4 w-100 border-top border-bottom">
-       <a class="nav-link" href="#">CONTACT</a>
+       <a class="nav-link" href="#section4">CONTACT</a>
       </li>
       <li class="mx-4 w-100 mt-3 mt-md-0"><button
         class="btn btn-navbar btn-sm px-4 shadow fs-6 w-100 border-2">LOGIN</button>
@@ -424,38 +424,38 @@
  <!--***** SCRIPTTS *****-->
  <script>
   // Example starter JavaScript for disabling form submissions if there are invalid fields
-  (function () {
+  ( function () {
    'use strict';
 
    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-   var forms = document.querySelectorAll('.needs-validation');
+   var forms = document.querySelectorAll( '.needs-validation' );
 
    // Loop over them and prevent submission
-   Array.prototype.slice.call(forms).forEach(function (form) {
-    form.addEventListener('submit', function (event) {
-     if (!form.checkValidity()) {
+   Array.prototype.slice.call( forms ).forEach( function ( form ) {
+    form.addEventListener( 'submit', function ( event ) {
+     if ( !form.checkValidity() ) {
       event.preventDefault();
       event.stopPropagation();
      }
 
      // Cambiar el placeholder del input con el ID 'emailAddress'
-     var inputElement = form.querySelector('#emailAddress');
-     if (inputElement) {
+     var inputElement = form.querySelector( '#emailAddress' );
+     if ( inputElement ) {
       inputElement.placeholder = 'example@email.com';
      }
 
-     form.classList.add('was-validated');
-    }, false);
-   });
-  })();
+     form.classList.add( 'was-validated' );
+    }, false );
+   } );
+  } )();
 
 
  </script>
 
  <script src="js/menu.js"></script>
 
- <script src="js/boostrap/bootstrap.min.js"></script>
- <script src="js/boostrap/bootstrap.min.js.map"></script>
+ <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+ <!-- <script src="js/boostrap/bootstrap.min.js.map"></script> -->
 </body>
 
 </html>

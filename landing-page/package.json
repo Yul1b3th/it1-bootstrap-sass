@@ -1,0 +1,8 @@
+{
+ "scripts": {
+  "build": "purgecss --css css/styles.css --content index.html -o css/reducido.css"
+ },
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}
